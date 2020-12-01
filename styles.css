@@ -1,0 +1,247 @@
+/* Master styles */
+body{
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Nav styles */
+.nav-wrapper {  
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side{
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid black;
+  }
+  
+.active-nav-link a {
+    color: black !important;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+} 
+
+.nav-link-wrapper a:hover {
+    color: black; 
+}
+
+/* Portfolio styles */
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: 2px;
+    background-repeat: no-repeat;
+    margin: 2px;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.subofsub1 {
+    top: 200px;
+}
+.subofsub2 {
+    text-align: center;
+}
+.subofsub3 {
+    text-align: center;
+}
+.subofsub4 {
+    text-align: center;
+}
+
+.image-blur {
+    transition: 1s;
+    filter: brightness(10%);
+}
+  
+.img-text-wrapper:hover .subtitle {
+    color: rgb(255, 255, 255);
+}
+  
+.logo-wrapper img {
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.logo1 {
+    position: relative;
+    top: -5px;
+    left: 25px;
+}
+
+.logo3 {
+    position: relative;
+    top: -35px;
+    left: 35px;
+}
+
+.logo2 {
+    width: 140%;
+    position: relative;
+    top: 20px;
+    left: 0px;
+}
+
+.logo5 {
+    position: relative;
+    top: 12px;
+    left: 55px;
+}
+  
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+  
+.profile-image-wrapper img {
+    float: right;
+    max-width: 80%;
+    height: auto;
+}
+  
+.profile-content-wrapper {
+    padding: 100px;
+}
+  
+.profile-content-wrapper h1 {
+    color:#2dc1cc; 
+    font-style:'Segoe UI';
+
+}
+
+.contact-info {
+    font-size: 100%;
+    text-align: center;
+    font-family:'Segoe UI';
+}
+
+
+.contacts a {
+    color: #2dc1cc;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.contacts a:hover {
+    color: rgb(5, 103, 121); 
+}
+
+
+#aboot {
+    font-size: 150%;
+}
+
+h1 {
+    font-size: 300%;
+}
+
+.first-line {
+    font-family: 'Segoe UI';
+}
+
+.toggle-button {
+    position: absolute;
+    top: 2.45rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.nav-link-wrapper a {
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .toggle-button{
+        display: flex;
+        text-align: center;
+    }
+
+    .left-side {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-wrapper {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .left-side {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .left-side.active {
+        display:flex;
+
+    }
+
+    
+}
